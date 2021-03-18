@@ -1,4 +1,5 @@
 
+set autoread
 set expandtab
 set ignorecase
 set number
@@ -19,6 +20,7 @@ set tabstop=2
 set wildmenu
 set nowrap
 
+
 let mapleader=","
 
 filetype indent plugin on
@@ -37,6 +39,7 @@ tnoremap <A-t> <C-\><C-n>:call TermToggle(12)<CR>
 " Terminal go back to normal mode
 tnoremap <Esc> <C-\><C-n>
 tnoremap :q! <C-\><C-n>:q!<CR>
+
 
 " NETRW
 let g:netrw_altv=1
@@ -61,6 +64,10 @@ Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'neoclide/coc.nvim'
 Plugin 'w0rp/ale'
 Plugin 'yuratomo/dbg.vim'
+Plugin 'iamcco/markdown-preview.vim'
+Plugin 'nginx.vim'
+Plugin 'kaicataldo/material.vim'
+Plugin 'pangloss/vim-javascript'
 call vundle#end()
 filetype plugin indent on
 " end Vundle
@@ -96,8 +103,13 @@ endfunction
 " nerdtree
 nmap <C-n> :NERDTreeToggle<Enter>
 
-" gruvbox
-colorscheme gruvbox
-
 source $HOME/.config/nvim/omnisharp.vimrc
 source $HOME/.config/nvim/coc.vimrc
+" source $HOME/.config/nvim/markdown-preview.vimrc
+source $HOME/.config/nvim/material.vimrc
+source $HOME/.config/nvim/pangloss_vim-javascript.vimrc
+source $HOME/.config/nvim/mine.vimrc
+
+colorscheme material
+
+

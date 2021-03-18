@@ -50,6 +50,7 @@ nnoremap <Leader>cf :OmniSharpCodeFormat<CR>
 
 " Start the omnisharp server for the current solution
 nnoremap <Leader>ss :OmniSharpStartServer<CR>
+nnoremap <Leader>sr :OmniSharpRestartServer<CR>
 nnoremap <Leader>sp :OmniSharpStopServer<CR>
 
 " Enable snippet completion
