@@ -30,6 +30,10 @@ command! MakeTags !ctags -R .
 nnoremap <C-TAB> :tabnext<Enter>
 vnoremap < <gv
 vnoremap > >gv
+map <leader>w :w<cr>
+map <leader>e :!%:p<cr>
+map <tab> <c-w>w
+map <s-tab> <c-w><s-w>
 
 " Toggle terminal on/off (neovim)
 nnoremap <A-t> :call TermToggle(12)<CR>
@@ -113,3 +117,12 @@ source $HOME/.config/nvim/mine.vimrc
 colorscheme material
 
 
+
+
+"
+" other stuffs
+"
+augroup twig_ft
+  au!
+  autocmd BufNewFile,BufRead *.bashrc set syntax=sh
+augroup END
