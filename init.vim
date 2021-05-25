@@ -122,7 +122,8 @@ colorscheme material
 "
 " other stuffs
 "
-augroup twig_ft
+augroup syntaxHighlighting_mine
   au!
   autocmd BufNewFile,BufRead *.bashrc set syntax=sh
+  autocmd BufNewFile,BufRead *.js,*.ts,*.jsx,*.tsx set syntax=typescript.jsx
 augroup END
