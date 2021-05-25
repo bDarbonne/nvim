@@ -34,6 +34,7 @@ map <leader>w :w<cr>
 map <leader>e :!%:p<cr>
 map <tab> <c-w>w
 map <s-tab> <c-w><s-w>
+map <c-t> :tabnew<cr>
 
 " Toggle terminal on/off (neovim)
 nnoremap <A-t> :call TermToggle(12)<CR>
